@@ -1,0 +1,9 @@
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/sim/uart2uart_tb.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/button_parser.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/debouncer.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/edge_detector.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/fifo.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/synchronizer.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/uart.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/uart_receiver.v
+/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab5/src/uart_transmitter.v
