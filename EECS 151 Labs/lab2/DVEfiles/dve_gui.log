@@ -1,0 +1,5 @@
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file 'sim/counter_testbench.vpd' was opened successfully.
+n/generic.sdb'
+1 driver (1 active statement) found for signal: counter_testbench.LEDS[3:0]
