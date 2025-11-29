@@ -1,0 +1,11 @@
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file 'sim/fifo_tb.vpd' was opened successfully.
+Warning: [AD-MDTS] Active drivers analysis is not possible
+  Missing dump for signal 'fifo_tb.dut.counter' at time '1574893'.
+  Active driver analysis will not be done.
+  Please dump this signal if you want active drivers analysis to be performed.
+n/generic.sdb'
+3 drivers (3 possibly active statements) found for signal: fifo_tb.dut.counter[7:0]
+Warning: [DVSW307] 
+Could not find any driver for signal: 'fifo_tb.dut.empty_reg'.
