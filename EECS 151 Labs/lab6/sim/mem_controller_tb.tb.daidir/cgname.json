@@ -1,0 +1,26 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "fifo": [
+        "fifo",
+        "BWIbP",
+        "module",
+        2
+    ],
+    "mem_controller_tb": [
+        "mem_controller_tb",
+        "x2Zmq",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}
