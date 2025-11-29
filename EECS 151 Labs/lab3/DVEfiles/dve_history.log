@@ -1,0 +1,145 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file sim/counter_tb.vpd} {gui_open_db -file /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab3/sim/debouncer_tb.vpd -design V1} {gui_open_db -file sim/debouncer_tb.vpd} {gui_open_db -file sim/counter_testbench.vpd} {gui_open_db -file /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab2/sim/counter_testbench.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1509
+gui_set_state_value -category Layout -key child_console_size_y -value 169
+gui_set_state_value -category Layout -key child_data_size_x -value 162
+gui_set_state_value -category Layout -key child_data_size_y -value 718
+gui_set_state_value -category Layout -key child_driver_size_x -value 1215
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 162
+gui_set_state_value -category Layout -key child_hier_size_y -value 718
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1178
+gui_set_state_value -category Layout -key child_schematic_size_y -value 643
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1188
+gui_set_state_value -category Layout -key child_source_size_y -value 713
+gui_set_state_value -category Layout -key child_wave_colname -value 256
+gui_set_state_value -category Layout -key child_wave_colvalue -value 256
+gui_set_state_value -category Layout -key child_wave_left -value 516
+gui_set_state_value -category Layout -key child_wave_right -value 1257
+gui_set_state_value -category Layout -key main_pos_x -value 293
+gui_set_state_value -category Layout -key main_pos_y -value 59
+gui_set_state_value -category Layout -key main_size_x -value 1802
+gui_set_state_value -category Layout -key main_size_y -value 1053
+gui_set_state_value -category Layout -key stand_source_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 1922
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 428
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1783
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 708
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 178
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 110
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1956
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 904
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab2
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file sim/counter_tb.vpd
+gui_list_expand -id Hier.1   counter_tb
+gui_list_action -id  Hier.1 counter_tb
+gui_list_action -id  Hier.1 counter_tb
+gui_list_select -id Hier.1 -current_item_name counter_tb.ctr -current_item_type Scope  -selected  { counter_tb.ctr   }
+gui_list_action -id  Hier.1 counter_tb.ctr
+gui_list_select -id Data.1 -selected  { counter_tb.ctr.clk  {counter_tb.ctr.buttons[3:0]}  {counter_tb.ctr.leds[3:0]}  {counter_tb.ctr.req[26:0]}  {counter_tb.ctr.cycles[26:0]}  {counter_tb.ctr.counter[3:0]}  {counter_tb.ctr.dynamode[1:0]}  {counter_tb.ctr.CYCLES_PER_SECOND[31:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { counter_tb.ctr.clk {counter_tb.ctr.buttons[3:0]} {counter_tb.ctr.leds[3:0]} {counter_tb.ctr.req[26:0]} {counter_tb.ctr.cycles[26:0]} {counter_tb.ctr.counter[3:0]} {counter_tb.ctr.dynamode[1:0]} {counter_tb.ctr.CYCLES_PER_SECOND[31:0]} } -insertionbar
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 247114
+gui_marker_move -id  Wave.1 C1 21123219
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 19892639
