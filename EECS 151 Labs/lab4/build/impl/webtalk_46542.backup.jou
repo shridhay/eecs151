@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 22 18:34:25 2023
+# Process ID: 46542
+# Current directory: /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab4/build/impl
+# Command line: wbtcv -mode batch -source /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab4/build/impl/.Xil/Vivado-46036-c111-15.EECS.Berkeley.EDU/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab4/build/impl/webtalk.log
+# Journal file: /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab4/build/impl/webtalk.jou
+#-----------------------------------------------------------
+source /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab4/build/impl/.Xil/Vivado-46036-c111-15.EECS.Berkeley.EDU/webtalk/labtool_webtalk.tcl -notrace
