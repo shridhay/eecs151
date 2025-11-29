@@ -1,0 +1,393 @@
+WARNING: Default location for XILINX_HLS not found
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/../scripts/synth.tcl
+# source ../target.tcl
+## set ABS_TOP                         /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6
+## set TOP                            z1top
+## set FPGA_PART                      xc7z020clg400-1
+## set_param general.maxThreads       4
+## set_param general.maxBackupLogs    0
+## set RTL { /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/button_parser.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/debouncer.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/edge_detector.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/fifo.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/fixed_length_piano.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/mem_controller.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/memory.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/piano_scale_rom.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/synchronizer.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_receiver.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_transmitter.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.v }
+## set CONSTRAINTS { /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.xdc }
+# if {[string trim ${RTL}] ne ""} {
+#   read_verilog -v ${RTL}
+# }
+# if {[string trim ${CONSTRAINTS}] ne ""} {
+#   read_xdc ${CONSTRAINTS}
+# }
+# synth_design -top ${TOP} -part ${FPGA_PART}
+Command: synth_design -top z1top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 114768
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2537.715 ; gain = 0.000 ; free physical = 57121 ; free virtual = 64483
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'z1top' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.v:1]
+	Parameter CLOCK_FREQ bound to: 125000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter B_SAMPLE_CNT_MAX bound to: 62500 - type: integer 
+	Parameter B_PULSE_CNT_MAX bound to: 200 - type: integer 
+	Parameter CYCLES_PER_SECOND bound to: 125000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'button_parser' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/button_parser.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 62500 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/synchronizer.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (1#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/synchronizer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/debouncer.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+	Parameter SAMPLE_CNT_MAX bound to: 62500 - type: integer 
+	Parameter PULSE_CNT_MAX bound to: 200 - type: integer 
+	Parameter WRAPPING_CNT_WIDTH bound to: 16 - type: integer 
+	Parameter SAT_CNT_WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/edge_detector.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (3#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/edge_detector.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'button_parser' (4#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/button_parser.v:2]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer__parameterized0' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/synchronizer.v:1]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer__parameterized0' (4#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/synchronizer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart.v:1]
+	Parameter CLOCK_FREQ bound to: 125000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_transmitter.v:1]
+	Parameter CLOCK_FREQ bound to: 125000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter SYMBOL_EDGE_TIME bound to: 1085 - type: integer 
+	Parameter CLOCK_COUNTER_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (5#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_transmitter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_receiver.v:1]
+	Parameter CLOCK_FREQ bound to: 125000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter SYMBOL_EDGE_TIME bound to: 1085 - type: integer 
+	Parameter SAMPLE_TIME bound to: 542 - type: integer 
+	Parameter CLOCK_COUNTER_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (6#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_receiver.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (7#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/fifo.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 8 - type: integer 
+	Parameter POINTER_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (8#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/fifo.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_controller' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/mem_controller.v:1]
+	Parameter FIFO_WIDTH bound to: 8 - type: integer 
+	Parameter MEM_WIDTH bound to: 8 - type: integer 
+	Parameter MEM_DEPTH bound to: 256 - type: integer 
+	Parameter NUM_BYTES_PER_WORD bound to: 1 - type: integer 
+	Parameter MEM_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter READ_CMD bound to: 3'b001 
+	Parameter READ_ADDR bound to: 3'b010 
+	Parameter READ_DATA bound to: 3'b011 
+	Parameter READ_MEM_VAL bound to: 3'b100 
+	Parameter ECHO_VAL bound to: 3'b101 
+	Parameter WRITE_MEM_VAL bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'memory' [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/memory.v:1]
+	Parameter MEM_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 256 - type: integer 
+	Parameter NUM_BYTES_PER_WORD bound to: 1 - type: integer 
+	Parameter MEM_ADDR_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'memory' (9#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/memory.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/mem_controller.v:107]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/mem_controller.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'mem_controller' (10#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/mem_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'z1top' (11#1) [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2537.715 ; gain = 0.000 ; free physical = 57852 ; free virtual = 65216
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2537.715 ; gain = 0.000 ; free physical = 57848 ; free virtual = 65212
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2537.715 ; gain = 0.000 ; free physical = 57848 ; free virtual = 65212
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2537.715 ; gain = 0.000 ; free physical = 57840 ; free virtual = 65205
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.xdc]
+Finished Parsing XDC File [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/z1top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/z1top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.668 ; gain = 0.000 ; free physical = 57681 ; free virtual = 65045
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2569.668 ; gain = 0.000 ; free physical = 57681 ; free virtual = 65045
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57827 ; free virtual = 65189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57827 ; free virtual = 65189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57827 ; free virtual = 65189
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'mem_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                          0000001 |                              000
+                READ_CMD |                          0000010 |                              001
+               READ_ADDR |                          0000100 |                              010
+            READ_MEM_VAL |                          0001000 |                              100
+                ECHO_VAL |                          0010000 |                              101
+               READ_DATA |                          0100000 |                              011
+           WRITE_MEM_VAL |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'mem_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57816 ; free virtual = 65180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 10    
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 5     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 28    
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 7     
+	   7 Input    8 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 54    
+	   7 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57799 ; free virtual = 65167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|z1top       | mem_ctrl/mem/mem_reg | 256 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57672 ; free virtual = 65038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57666 ; free virtual = 65033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|z1top       | mem_ctrl/mem/mem_reg | 256 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mem_ctrl/mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57664 ; free virtual = 65031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57666 ; free virtual = 65032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57666 ; free virtual = 65032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57665 ; free virtual = 65032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57665 ; free virtual = 65032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57665 ; free virtual = 65032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57665 ; free virtual = 65032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     4|
+|3     |LUT1     |     5|
+|4     |LUT2     |    34|
+|5     |LUT3     |    26|
+|6     |LUT4     |    70|
+|7     |LUT5     |    28|
+|8     |LUT6     |    86|
+|9     |MUXF7    |    16|
+|10    |RAMB18E1 |     1|
+|11    |FDRE     |   286|
+|12    |FDSE     |     5|
+|13    |IBUF     |     4|
+|14    |OBUF     |     7|
+|15    |OBUFT    |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.668 ; gain = 31.953 ; free physical = 57665 ; free virtual = 65032
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2569.668 ; gain = 0.000 ; free physical = 57704 ; free virtual = 65072
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2569.676 ; gain = 31.953 ; free physical = 57704 ; free virtual = 65072
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.676 ; gain = 0.000 ; free physical = 57794 ; free virtual = 65162
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.xdc]
+Finished Parsing XDC File [/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2569.676 ; gain = 0.000 ; free physical = 57732 ; free virtual = 65099
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2569.676 ; gain = 36.145 ; free physical = 57806 ; free virtual = 65173
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+# write_checkpoint -force ${TOP}.dcp
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2609.688 ; gain = 0.000 ; free physical = 57801 ; free virtual = 65170
+INFO: [Common 17-1381] The checkpoint '/home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/build/synth/z1top.dcp' has been generated.
+# report_timing_summary -file post_synth_timing_summary.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+# report_drc -file post_synth_drc.rpt
+Command: report_drc -file post_synth_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/current/data/ip'.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/build/synth/post_synth_drc.rpt.
+report_drc completed successfully
+# report_utilization -file post_synth_utilization.rpt
+# write_verilog -force -file post_synth.v
+# write_xdc -force -file post_synth.xdc
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 30 14:00:54 2023...

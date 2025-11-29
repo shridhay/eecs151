@@ -1,0 +1,7 @@
+set ABS_TOP                         /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6
+set TOP                            z1top
+set FPGA_PART                      xc7z020clg400-1
+set_param general.maxThreads       4
+set_param general.maxBackupLogs    0
+set RTL { /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/button_parser.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/debouncer.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/edge_detector.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/fifo.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/fixed_length_piano.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/mem_controller.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/memory.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/piano_scale_rom.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/synchronizer.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_receiver.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/uart_transmitter.v /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.v }
+set CONSTRAINTS { /home/cc/eecs151/fa23/class/eecs151-aer/fpga-labs-fa23-shridhay/lab6/src/z1top.xdc }
